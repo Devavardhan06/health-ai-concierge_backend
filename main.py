@@ -1,0 +1,50 @@
+from fastapi import FastAPI
+from app.api.chats import router as chat_router
+from app.db.session import Base, engine
+from app.api.booking import router as booking_router 
+from app.api.payment import router as payment_router
+from app.api.webhook import router as webhook_router
+from app.api.admin.bookings import router as admin_bookings_router
+from app.api.admin.chats import router as admin_chats_router
+from app.api.admin.knowledge import router as admin_knowledge_router
+from app.api.admin.escalations import router as admin_escalations_router
+from app.api.admin.analytics import router as admin_analytics_router
+from app.api.auth import router as auth_router
+from app.api.admin.audit import router as admin_audit_router
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+from fastapi.responses import JSONResponse
+from app.core.rate_limiter import limiter
+
+app = FastAPI(title="AI Concierge Platform")
+
+app.state.limiter = limiter
+
+@app.on_event("startup")
+def startup():
+    # Create DB tables safely on startup
+    Base.metadata.create_all(bind=engine)
+
+app.include_router(chat_router)
+app.include_router(booking_router)
+app.include_router(payment_router)
+app.include_router(webhook_router)
+app.include_router(admin_bookings_router)
+app.include_router(admin_chats_router)
+app.include_router(admin_knowledge_router)
+app.include_router(admin_escalations_router)
+app.include_router(admin_analytics_router)
+app.include_router(auth_router)
+app.include_router(admin_audit_router)
+app.add_middleware(SlowAPIMiddleware)
+
+@app.exception_handler(RateLimitExceeded)
+def rate_limit_handler(request, exc):
+    return JSONResponse(
+        status_code=429,
+        content={"detail": "Too many requests. Please slow down."}
+    )
+@app.get("/")
+def root():
+    return {"status": "Chat API running"}
+

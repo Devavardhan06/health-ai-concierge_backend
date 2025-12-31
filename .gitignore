@@ -1,0 +1,30 @@
+# Environment & secrets
+.env
+.env.*
+credentials.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# Databases
+*.db
+*.sqlite3
+*.sql
+
+# Logs
+*.log
+logs/
+
+# AI artifacts
+chroma/
+faiss_index/
+embeddings.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
