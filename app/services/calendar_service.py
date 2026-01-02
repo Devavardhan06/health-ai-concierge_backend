@@ -3,9 +3,6 @@ from googleapiclient.discovery import build
 from datetime import datetime
 import pytz
 
-# -----------------------------
-# Google Calendar Configuration
-# -----------------------------
 
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 SERVICE_ACCOUNT_FILE = "credentials.json"
@@ -14,9 +11,6 @@ TIME_ZONE = "Asia/Kolkata"
 
 tz = pytz.timezone(TIME_ZONE)
 
-# -----------------------------
-# Authenticate & Build Service
-# -----------------------------
 
 credentials = service_account.Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE,
@@ -25,9 +19,7 @@ credentials = service_account.Credentials.from_service_account_file(
 
 service = build("calendar", "v3", credentials=credentials)
 
-# -----------------------------
-# Fetch Existing Events
-# -----------------------------
+
 
 def get_existing_events(start, end):
     """
@@ -63,9 +55,7 @@ def get_existing_events(start, end):
 
     return events  # ✅ ALWAYS a list
 
-# -----------------------------
-# Create Calendar Event
-# -----------------------------
+
 
 def create_event(start, end, summary, description):
     """
