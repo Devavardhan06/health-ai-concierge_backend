@@ -254,6 +254,7 @@ health-ai-concierge/
 ## 👥 Authors
 
 * **Gatla Devavardhan** — Lead Developer & System Architect
+* **Tharuna** - Frontend Developer 
 
 ---
 
