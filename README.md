@@ -1,9 +1,5 @@
 # Health AI Concierge Platform 🏥🤖
 
-A **full-stack, AI-powered with RAG based healthcare concierge system** that delivers intelligent patient triage, smart doctor recommendations, clinic administration, and secure medical data management — designed with **real-world SaaS architecture, responsible AI principles, and production-grade engineering practices**.
-
----
-
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Stack](https://img.shields.io/badge/Stack-React%20|%20FastAPI%20|%20AI%20|%20RAG-blue)
 ![CI](https://img.shields.io/badge/CI-GitHub%20Actions-brightgreen)
