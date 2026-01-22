@@ -1,0 +1,271 @@
+Clinic Name: Sunrise Multispeciality Clinic
+
+=== GENERAL INFORMATION ===
+
+Clinic Overview:
+Sunrise Multispeciality Clinic is a trusted healthcare provider serving the community since 2015.
+We are committed to delivering quality healthcare services with compassion and excellence.
+Our clinic is equipped with modern medical facilities and staffed by experienced healthcare professionals.
+We maintain strict hygiene standards and patient confidentiality protocols.
+
+Clinic Timings:
+The clinic operates from Monday to Saturday, 9:00 AM to 6:00 PM.
+The clinic is closed on Sundays and public holidays.
+Last token for same-day appointments is issued at 5:30 PM.
+The reception desk closes at 6:00 PM sharp.
+
+=== CONSULTATION SERVICES ===
+
+General Physician Services:
+We provide consultations for fever, cold, cough, and viral infections.
+Treatment for digestive issues, headaches, and body aches is available.
+Annual health checkups and preventive health screenings are offered.
+Prescription renewals and follow-up consultations are provided.
+
+Specialist Consultations:
+Specialist consultations are available for diabetes, cardiology, and orthopedics.
+Diabetes management includes blood sugar monitoring and lifestyle counseling.
+Cardiology services cover blood pressure management and heart health assessments.
+Orthopedic consultations address joint pain, fractures, and mobility issues.
+
+Pediatric Services:
+Pediatric consultations are available for children below 14 years.
+Vaccination services for infants and children are provided as per national immunization schedule.
+Growth and development monitoring is offered during pediatric visits.
+Treatment for common childhood illnesses like fever, diarrhea, and skin rashes is available.
+
+Women's Health Services:
+Antenatal checkups and pregnancy monitoring are available.
+Postnatal care and breastfeeding support are provided.
+General gynecological consultations are offered.
+Pap smear tests can be scheduled during gynecology consultations.
+
+=== DOCTORS AND STAFF ===
+
+Medical Team:
+Dr. Ramesh Kumar (General Physician) - MBBS, MD - 15 years of experience - Available Monday to Friday, 9:00 AM to 1:00 PM.
+Dr. Anjali Sharma (Pediatrician) - MBBS, DCH - 10 years of experience - Available Monday, Wednesday, and Friday, 2:00 PM to 6:00 PM.
+Dr. Vikram Rao (Orthopedic Specialist) - MBBS, MS Orthopedics - 12 years of experience - Available on Tuesdays and Thursdays, 10:00 AM to 4:00 PM.
+Dr. Neha Verma (Cardiologist) - MBBS, DM Cardiology - 8 years of experience - Available on Saturdays, 9:00 AM to 2:00 PM.
+Dr. Priya Malhotra (Gynecologist) - MBBS, DGO - 9 years of experience - Available Monday, Wednesday, Friday, 3:00 PM to 6:00 PM.
+
+Support Staff:
+Our clinic has trained nursing staff available during all operating hours.
+A qualified pharmacist is available for medication dispensing and counseling.
+Lab technicians are present for sample collection and basic diagnostic tests.
+Reception staff assist with appointment booking and patient queries.
+
+=== APPOINTMENT SYSTEM ===
+
+Appointment Booking:
+Appointments can be booked online through the clinic website at www.sunriseclinic.com.
+Phone bookings are accepted by calling the clinic during working hours.
+Walk-in appointments are accepted based on availability.
+Patients are advised to arrive 15 minutes before their scheduled appointment.
+A booking confirmation SMS is sent to registered mobile numbers.
+
+Appointment Cancellation:
+Appointments can be cancelled up to 2 hours before the scheduled time.
+Cancellations can be done through the website or by calling the clinic.
+Repeated no-shows may affect future appointment availability.
+
+Token System:
+Walk-in patients are issued tokens based on first-come-first-served basis.
+Average waiting time for walk-ins is 30-45 minutes depending on patient volume.
+Token numbers are displayed on the screen in the waiting area.
+
+=== DIAGNOSTIC SERVICES ===
+
+Laboratory Services:
+The clinic offers complete blood count (CBC) tests.
+Blood sugar testing (fasting and post-prandial) is available.
+Lipid profile tests for cholesterol screening are provided.
+Liver function tests and kidney function tests are available.
+Urine analysis and stool examination services are offered.
+Thyroid function tests (T3, T4, TSH) can be conducted.
+Sample collection is done from 9:00 AM to 12:00 PM for lab tests.
+Most lab reports are available within 24-48 hours.
+
+Imaging Services:
+ECG (Electrocardiogram) services are available during clinic hours without prior appointment.
+X-ray services are available for bone fractures, chest X-rays, and joint assessments.
+X-ray reports are provided on the same day.
+Ultrasound services are not available at this clinic.
+CT scan and MRI services are not available at this clinic.
+
+=== PHARMACY SERVICES ===
+
+Medicine Availability:
+An in-house pharmacy stocks commonly prescribed medicines.
+Generic and branded medications are available.
+Prescription medicines are dispensed only with valid doctor prescriptions.
+Over-the-counter medications for common ailments are available.
+The pharmacy operates during clinic hours from 9:00 AM to 6:00 PM.
+
+Medicine Home Delivery:
+Home delivery of medicines is available within 5 km radius.
+Delivery charges apply for orders below Rs. 500.
+Free home delivery for medicine orders above Rs. 500.
+Home delivery is available Monday to Saturday.
+
+=== EMERGENCY SERVICES ===
+
+Emergency Policy:
+Emergency and trauma services are not available at this clinic.
+Patients requiring emergency care should visit City General Hospital, located 2 km away.
+For medical emergencies, patients should call the national emergency number 108.
+First aid for minor injuries is available at the clinic.
+
+=== FEES AND PAYMENT ===
+
+Consultation Fees:
+General Physician consultation: Rs. 300 per visit.
+Specialist consultation (Cardiology, Orthopedics): Rs. 600 per visit.
+Pediatric consultation: Rs. 400 per visit.
+Gynecology consultation: Rs. 500 per visit.
+Follow-up consultations within 15 days: Rs. 150.
+
+Diagnostic Test Fees:
+Complete Blood Count (CBC): Rs. 250.
+Blood Sugar (Fasting/Random): Rs. 100.
+Lipid Profile: Rs. 500.
+Liver Function Test: Rs. 600.
+Kidney Function Test: Rs. 550.
+Thyroid Profile: Rs. 450.
+ECG: Rs. 200.
+X-ray (single view): Rs. 300.
+X-ray (multiple views): Rs. 500.
+
+Payment Methods:
+We accept cash, credit cards, debit cards, and UPI payments.
+Payment should be made at the reception desk after consultation.
+Receipts are provided for all transactions.
+Insurance claims are not processed at this clinic.
+Patients can submit clinic receipts to their insurance providers for reimbursement.
+
+=== LOCATION AND FACILITIES ===
+
+Location Information:
+The clinic is located at 123, Main Road, near Central Park.
+The clinic is easily accessible by public transport.
+Bus stops are available 200 meters from the clinic.
+The nearest metro station is Central Park Metro, 1.5 km away.
+
+Parking Facilities:
+Free parking facilities are available for patients.
+The parking area can accommodate up to 20 vehicles.
+Two-wheeler parking is available separately.
+
+Clinic Facilities:
+Air-conditioned waiting area with comfortable seating for 25 people.
+Separate consultation rooms for each doctor.
+Clean and hygienic washrooms are available.
+Wheelchair accessibility is provided at the entrance.
+Drinking water facility is available in the waiting area.
+The clinic has CCTV surveillance for security purposes.
+
+=== HEALTH PROGRAMS ===
+
+Preventive Health Checkups:
+Comprehensive health checkup packages are available.
+Basic health checkup includes CBC, blood sugar, lipid profile, and physician consultation - Rs. 1,500.
+Cardiac health checkup includes ECG, lipid profile, and cardiology consultation - Rs. 2,200.
+Diabetes screening package includes fasting/post-prandial sugar and HbA1c test - Rs. 800.
+
+Vaccination Services:
+Childhood vaccination as per national immunization schedule is provided.
+Adult vaccinations including flu shots and tetanus boosters are available.
+COVID-19 vaccination information can be obtained from reception.
+Vaccination cards are maintained for all pediatric patients.
+
+Health Awareness Programs:
+Free health awareness sessions are conducted every last Saturday of the month.
+Topics include diabetes management, heart health, and nutrition.
+Sessions are conducted from 10:00 AM to 11:00 AM in the waiting area.
+Registration is not required for awareness sessions.
+
+=== CONTACT INFORMATION ===
+
+Contact Details:
+Clinic Address: 123, Main Road, near Central Park, Mumbai - 400001.
+Phone Number: +91-22-12345678.
+Email Address: info@sunriseclinic.com.
+Website: www.sunriseclinic.com.
+
+Phone Support:
+Phone support is available from 9:00 AM to 5:30 PM, Monday to Saturday.
+For appointment booking, press 1.
+For lab reports inquiry, press 2.
+For general queries, press 3.
+WhatsApp booking is available on +91-9876543210.
+
+=== COVID-19 AND SAFETY GUIDELINES ===
+
+COVID-19 Protocols:
+Patients with fever or flu symptoms are requested to wear a mask.
+Hand sanitization is mandatory at the clinic entrance.
+Temperature screening is conducted at the entrance.
+Social distancing markers are placed in the waiting area.
+The clinic is sanitized twice daily using approved disinfectants.
+
+Patient Safety:
+All medical equipment is sterilized after each use.
+Disposable syringes and needles are used for injections.
+Biomedical waste is disposed of as per government regulations.
+The clinic follows strict infection control protocols.
+
+=== PATIENT POLICIES ===
+
+Medical Records:
+Patient medical records are maintained confidentially in electronic format.
+Patients can request copies of their medical records with valid identification.
+Medical record requests are processed within 48 hours.
+
+Prescription Policy:
+Prescriptions are valid for 30 days from the date of issue.
+Lost prescriptions can be reprinted with a nominal fee of Rs. 50.
+Prescriptions are provided in printed format with doctor's signature.
+
+Patient Rights:
+Patients have the right to receive respectful and quality care.
+Patients can ask questions about their diagnosis and treatment.
+Patient privacy and confidentiality are strictly maintained.
+Patients can provide feedback through the suggestion box at reception.
+
+Feedback and Complaints:
+Patient feedback forms are available at the reception desk.
+Complaints can be registered with the clinic administrator.
+The clinic management reviews all feedback and complaints within 7 working days.
+Patients can also provide feedback through email or the clinic website.
+
+=== FREQUENTLY ASKED QUESTIONS ===
+
+Q: Do I need to book an appointment in advance?
+A: Appointments are recommended but walk-ins are accepted based on availability.
+
+Q: What documents should I bring for my first visit?
+A: Please bring a valid ID proof and any previous medical records if available.
+
+Q: Can family members accompany patients?
+A: One attendant per patient is allowed inside the consultation room.
+
+Q: Are video consultations available?
+A: Video consultations are not currently available at our clinic.
+
+Q: Do you provide medical certificates?
+A: Yes, medical certificates are provided by doctors when medically necessary.
+
+Q: Is ambulance service available?
+A: Ambulance services are not provided by the clinic. Please call 108 for emergency ambulance.
+
+Q: Can I get my reports via email?
+A: Yes, lab reports can be emailed to registered email addresses upon request.
+
+Q: Do you treat dental problems?
+A: Dental services are not available at our clinic. We can refer you to a dental specialist.
+
+Q: Is physiotherapy available?
+A: Physiotherapy services are not available at this clinic.
+
+Q: Can I transfer my medical records from another clinic?
+A: Yes, you can bring your previous medical records and we will maintain them in our system.
