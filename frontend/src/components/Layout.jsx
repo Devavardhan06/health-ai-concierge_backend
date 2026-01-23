@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
     const navigate = useNavigate();
     const isAppRoute = ['/chat', '/booking', '/admin/dashboard', '/patient/dashboard', '/portal/dashboard'].some(path => location.pathname.startsWith(path));
     const isAuthRoute = ['/admin/login', '/login', '/register', '/patient/login', '/patient/register'].includes(location.pathname);
+    const isGetStarted = location.pathname === '/';
 
+    if (isGetStarted) return <div className="min-h-screen">{children}</div>;
     if (isAuthRoute) return <div className="min-h-screen bg-white">{children}</div>;
     if (isAppRoute) return <AppLayout>{children}</AppLayout>;
     return <PublicLayout>{children}</PublicLayout>;
@@ -37,12 +39,12 @@ const PublicLayout = ({ children }) => {
             </div>
             <nav className="navbar" style={{ top: '36px' }}>
                 <div className="container navbar-content">
-                    <Link to="/" className="brand-logo">
+                    <Link to="/home" className="brand-logo">
                         <i className='bx bxs-capsule'></i>
                         MediAI
                     </Link>
                     <div className="nav-links">
-                        <Link to="/" className="nav-link">Home</Link>
+                        <Link to="/home" className="nav-link">Home</Link>
                         <button onClick={() => scrollToSection('services')} className="nav-link btn-ghost" style={{ border: 'none', cursor: 'pointer', fontSize: '0.95rem' }}>Services</button>
                         <Link to="/admin/login" className="nav-link">Providers</Link>
                         <button onClick={() => navigate('/patient/login')} className="btn btn-primary btn-sm">Patient Portal</button>

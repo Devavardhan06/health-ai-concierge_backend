@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import GetStarted from './pages/GetStarted';
 import Landing from './pages/Landing';
 import Chat from './pages/Chat';
 import Booking from './pages/Booking';
@@ -16,7 +17,8 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<GetStarted />} />
+          <Route path="/home" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/patient/login" element={<Login />} />
