@@ -33,14 +33,14 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="admin-login-page">
+    <div className="login-page">
       <div className="login-container glass-panel animate-fade-in">
         <div className="login-header">
           <button className="back-btn" onClick={() => navigate('/')}>
             <i className='bx bx-arrow-back'></i> Back
           </button>
-          <h1>Admin Login</h1>
         </div>
+        <h1 style={{ textAlign: 'center', marginBottom: '32px', marginTop: '-16px', fontSize: '1.75rem' }}>Admin Login</h1>
 
         <form className="login-form" onSubmit={handleLogin}>
           <div className="form-group">

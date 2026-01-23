@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 const Layout = ({ children }) => {
     const location = useLocation();
     const navigate = useNavigate();
-    const isAppRoute = ['/chat', '/booking', '/admin/dashboard'].some(path => location.pathname.startsWith(path));
-    const isAuthRoute = ['/admin/login'].includes(location.pathname);
+    const isAppRoute = ['/chat', '/booking', '/admin/dashboard', '/patient/dashboard', '/portal/dashboard'].some(path => location.pathname.startsWith(path));
+    const isAuthRoute = ['/admin/login', '/login', '/register', '/patient/login', '/patient/register'].includes(location.pathname);
 
     if (isAuthRoute) return <div className="min-h-screen bg-white">{children}</div>;
     if (isAppRoute) return <AppLayout>{children}</AppLayout>;
@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
 };
 
 const PublicLayout = ({ children }) => {
+    const navigate = useNavigate();
     const [locationText, setLocationText] = useState('Detecting location...');
 
     useEffect(() => {
@@ -44,7 +45,7 @@ const PublicLayout = ({ children }) => {
                         <Link to="/" className="nav-link">Home</Link>
                         <button onClick={() => scrollToSection('services')} className="nav-link btn-ghost" style={{ border: 'none', cursor: 'pointer', fontSize: '0.95rem' }}>Services</button>
                         <Link to="/admin/login" className="nav-link">Providers</Link>
-                        <button onClick={() => navigate('/chat')} className="btn btn-primary btn-sm">Patient Portal</button>
+                        <button onClick={() => navigate('/patient/login')} className="btn btn-primary btn-sm">Patient Portal</button>
                     </div>
                 </div>
             </nav>

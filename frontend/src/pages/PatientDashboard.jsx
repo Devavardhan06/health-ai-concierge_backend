@@ -1,26 +1,63 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import apiService from '../services/api';
 
 const PatientDashboard = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [patientEmail, setPatientEmail] = useState('');
+    const navigate = useNavigate();
 
     useEffect(() => {
+        // Check if patient is logged in
+        const patientSession = localStorage.getItem('patientSession');
+        if (!patientSession) {
+            // Not logged in, redirect to login
+            navigate('/patient/login');
+            return;
+        }
+        
+        // Get patient email from session
+        const session = JSON.parse(patientSession);
+        setPatientEmail(session.email);
+
         const fetchDashboard = async () => {
             try {
                 const result = await apiService.getPatientDashboard();
                 setData(result);
             } catch (error) {
                 console.error("Failed to load dashboard", error);
+                // If backend is unavailable, just show demo mode
+                setData({ demo: true });
             } finally {
                 setLoading(false);
             }
         };
         fetchDashboard();
-    }, []);
+    }, [navigate]);
 
     if (loading) return <div className="text-center p-8">Loading dashboard...</div>;
-    if (!data) return <div className="text-center p-8">Failed to load data.</div>;
+    
+    // Demo mode when backend is unavailable
+    if (!data || data.demo) {
+        return (
+            <div className="container" style={{ padding: '24px 0' }}>
+                <h2 className="mb-8">Patient Portal</h2>
+                <div className="card">
+                    <div style={{ textAlign: 'center', padding: '40px' }}>
+                        <i className='bx bx-check-circle' style={{ fontSize: '3rem', color: 'var(--success)', marginBottom: '16px' }}></i>
+                        <h3>Welcome to Your Patient Dashboard!</h3>
+                        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
+                            Logged in as: <strong>{patientEmail}</strong>
+                        </p>
+                        <p style={{ color: 'var(--text-muted)' }}>
+                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     const { profile, timeline, insights } = data;
 
