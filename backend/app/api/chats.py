@@ -56,6 +56,8 @@ def send_message(
     db.add(ai_msg)
     db.commit()
     db.refresh(ai_msg)
+    
+    return [user_msg, ai_msg]
 
 from fastapi import UploadFile, File, Form
 from app.services.file_service import extract_text_from_pdf
