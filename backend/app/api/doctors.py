@@ -3,7 +3,7 @@ import random
 
 router = APIRouter(prefix="/doctors", tags=["Doctors"])
 
-@router.get("/")
+@router.get("")
 def get_doctors():
     """
     Returns a list of doctors with simulated AI match scores.
