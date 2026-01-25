@@ -4,6 +4,7 @@ import apiService from '../services/api';
 
 const Doctors = () => {
     const navigate = useNavigate();
+    const [error, setError] = useState(null);
     const [doctors, setDoctors] = useState([]);
     const [loading, setLoading] = useState(true);
     const [filter, setFilter] = useState('All');
@@ -12,9 +13,30 @@ const Doctors = () => {
         const fetchDoctors = async () => {
             try {
                 const result = await apiService.getDoctors();
-                setDoctors(result);
+                if (result && Array.isArray(result)) {
+                    setDoctors(result);
+                } else {
+                    console.warn("Backend returned unexpected data format for doctors");
+                    setDoctors([]);
+                }
             } catch (error) {
                 console.error("Failed to load doctors", error);
+                setError("Could not connect to the medical database.");
+                // Demo fallback if backend fails
+                setDoctors([
+                    {
+                        id: 'demo1',
+                        name: "Dr. Demo Specialist (Local)",
+                        specialty: "General Physician",
+                        hospital: "Demo Health Center",
+                        experience: "10 years",
+                        rating: 4.5,
+                        match_score: 95,
+                        match_reason: "Viewing demo mode because backend is unavailable.",
+                        availability: "Online Now",
+                        image: "https://randomuser.me/api/portraits/men/1.jpg"
+                    }
+                ]);
             } finally {
                 setLoading(false);
             }
@@ -45,6 +67,12 @@ const Doctors = () => {
                     ))}
                 </div>
             </div>
+
+            {error && (
+                <div style={{ background: '#fff7ed', border: '1px solid #ffedd5', padding: '12px 20px', borderRadius: '12px', color: '#9a3412', marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <i className='bx bxs-error-circle'></i> {error}
+                </div>
+            )}
 
             {loading ? (
                 <div className="text-center p-8">Finding best matches...</div>
