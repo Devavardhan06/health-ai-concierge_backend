@@ -1,3 +1,5 @@
+import os
+import json
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from datetime import datetime
@@ -11,11 +13,23 @@ TIME_ZONE = "Asia/Kolkata"
 
 tz = pytz.timezone(TIME_ZONE)
 
-
-credentials = service_account.Credentials.from_service_account_file(
-    SERVICE_ACCOUNT_FILE,
-    scopes=SCOPES
-)
+# 🚀 Load Credentials (File for Local, Env for Production)
+if os.path.exists(SERVICE_ACCOUNT_FILE):
+    credentials = service_account.Credentials.from_service_account_file(
+        SERVICE_ACCOUNT_FILE,
+        scopes=SCOPES
+    )
+else:
+    # Fallback to Environment Variable (for Render)
+    creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+    if not creds_json:
+        raise FileNotFoundError("Neither credentials.json found nor GOOGLE_CREDENTIALS_JSON set.")
+    
+    creds_dict = json.loads(creds_json)
+    credentials = service_account.Credentials.from_service_account_info(
+        creds_dict,
+        scopes=SCOPES
+    )
 
 service = build("calendar", "v3", credentials=credentials)
 
