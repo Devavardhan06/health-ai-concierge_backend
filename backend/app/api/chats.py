@@ -20,7 +20,7 @@ def get_db():
         db.close()
 
 
-@router.post("/", response_model=list[ChatResponse])
+@router.post("", response_model=list[ChatResponse])
 @limiter.limit("10/minute")
 def send_message(
     request: Request,
@@ -107,6 +107,6 @@ async def upload_file(
     return ai_msg
 
 
-@router.get("/", response_model=list[ChatResponse])
+@router.get("", response_model=list[ChatResponse])
 def get_chat_history(db: Session = Depends(get_db)):
     return db.query(ChatMessage).order_by(ChatMessage.timestamp).all()
